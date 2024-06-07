@@ -7,6 +7,7 @@ const App = () => {
     <>
       <BrowserRouter>
         <Navbar />
+        {/* shhhhhhhhhh */}
       </BrowserRouter>
     </>
   );
