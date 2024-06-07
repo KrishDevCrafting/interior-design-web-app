@@ -1,6 +1,8 @@
 // src/components/Navbar.js
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars, faTimes, faSearch } from '@fortawesome/free-solid-svg-icons';
 import "./Navbar.css";
 
 const Navbar = () => {
@@ -14,7 +16,7 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="navbar-container">
         <Link to="/" className="navbar-logo">
-          CoolNavbar
+          Itachi-Design
         </Link>
         <div className="menu-icon" onClick={toggleMenu}>
           <i className={isOpen ? "fas fa-times" : "fas fa-bars"}></i>
@@ -27,12 +29,12 @@ const Navbar = () => {
           </li>
           <li className="nav-item">
             <Link to="/about" className="nav-links" onClick={toggleMenu}>
-              About
+              Pages
             </Link>
           </li>
           <li className="nav-item">
             <Link to="/services" className="nav-links" onClick={toggleMenu}>
-              Services
+              Our-Services
             </Link>
           </li>
           <li className="nav-item">
@@ -42,7 +44,8 @@ const Navbar = () => {
           </li>
         </ul>
         <div className="search-bar">
-          <input type="text" placeholder="Search..." />
+          {/* <input type="text" placeholder="Search..." /> */}{" "}
+          <FontAwesomeIcon icon={faSearch} className="search-icon" />
         </div>
       </div>
     </nav>
