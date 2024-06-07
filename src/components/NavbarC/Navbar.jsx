@@ -1,13 +1,13 @@
 // src/components/Navbar.js
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars, faTimes, faSearch } from '@fortawesome/free-solid-svg-icons';
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import "./Navbar.css";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-
+  const [SearchIcon, setSearch] = useState(false);
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
@@ -44,8 +44,14 @@ const Navbar = () => {
           </li>
         </ul>
         <div className="search-bar">
-          {/* <input type="text" placeholder="Search..." /> */}{" "}
-          <FontAwesomeIcon icon={faSearch} className="search-icon" />
+          <div className={`search-bar ${SearchIcon ? "focused" : ""}`}>
+            <input
+              type="text"
+              placeholder="Search..."
+              onFocus={() => setSearch(true)}
+              onBlur={() => setSearch(false)}
+            />
+          </div>
         </div>
       </div>
     </nav>
