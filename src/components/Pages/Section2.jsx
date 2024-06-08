@@ -1,7 +1,11 @@
 import React from "react";
 import "../Pages/Section2.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBuilding } from "@fortawesome/free-solid-svg-icons";
+import {
+  faBuilding,
+  faHouse,
+  faPaste,
+} from "@fortawesome/free-solid-svg-icons";
 const ServiceSection = () => {
   return (
     <>
@@ -15,24 +19,44 @@ const ServiceSection = () => {
       <div className="main-container">
         <div className="box-card">
           <span>
-            {" "}
-            <h1 id="alignment">
+            <h1>
               {
                 <FontAwesomeIcon
                   icon={faBuilding}
                   style={{ color: "#cda274" }}
                 />
               }
-            </h1>
+            </h1>{" "}
+            The Art and Science of Architecture
           </span>
-
-          <span>The Art and Science of Architecture</span>
         </div>
         <div className="box-card">
-          <span>Home Check and Safety and Secure</span>
+          <span>
+            <h1>
+              <FontAwesomeIcon
+                icon={faHouse}
+                style={{
+                  "--fa-primary-color": "#cda279",
+                  "--fa-secondary-color": "#cda279",
+                }}
+              />
+            </h1>
+            Home Check and Safety and Secure
+          </span>
         </div>
         <div className="box-card">
-          <span>Pattern and Materials for Interior Plan</span>
+          <span>
+            <h1>
+              <FontAwesomeIcon
+                icon={faPaste}
+                style={{
+                  "--fa-primary-color": "#cda279",
+                  "--fa-secondary-color": "#cda279",
+                }}
+              />
+            </h1>
+            Pattern and Materials for Interior Plan
+          </span>
         </div>
       </div>
     </>
