@@ -36,8 +36,7 @@ const ServiceSection = () => {
               <FontAwesomeIcon
                 icon={faHouse}
                 style={{
-                  "--fa-primary-color": "#cda279",
-                  "--fa-secondary-color": "#cda279",
+                  color: "#cda279",
                 }}
               />
             </h1>
@@ -50,8 +49,7 @@ const ServiceSection = () => {
               <FontAwesomeIcon
                 icon={faPaste}
                 style={{
-                  "--fa-primary-color": "#cda279",
-                  "--fa-secondary-color": "#cda279",
+                  color: "#cda279",
                 }}
               />
             </h1>

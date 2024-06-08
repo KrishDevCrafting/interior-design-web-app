@@ -1,13 +1,16 @@
-.head-text {
-  text-align: center;
-  font-size: 20px;
+.head-text h4{
+color: #cda279;
+  
 }
+.head-text{text-align: center;
+  font-size: 20px;}
 .main-container {
+  
   display: flex;
   justify-content: space-evenly;
 }
 .box-card {
-  border: 1px solid red;
+
   width: 350px;
   height: 300px;
 }
@@ -55,7 +58,7 @@
   text-decoration: none;
   width: 100%;
   padding: 18px 25px;
-  color: #fff;
+  color: #000;
   font-size: 1em;
   font-weight: 700;
   letter-spacing: 0.3em;

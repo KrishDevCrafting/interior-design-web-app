@@ -8,6 +8,7 @@ import "./Navbar.css";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [SearchIcon, setSearch] = useState(false);
+ // import { motion, AnimatePresence } from "framer-motion";
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
@@ -16,7 +17,7 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="navbar-container">
         <Link to="/" className="navbar-logo">
-          Itachi-Design
+          ICrave Creations
         </Link>
         <div className="menu-icon" onClick={toggleMenu}>
           <i className={isOpen ? "fas fa-times" : "fas fa-bars"}></i>
@@ -58,5 +59,5 @@ const Navbar = () => {
   );
 };
 
-////khjhbjbkhjbkhbkjbkjbjk
+
 export default Navbar;
