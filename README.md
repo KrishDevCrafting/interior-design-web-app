@@ -1,8 +1,7 @@
 Headline:
-
-Elevate your space with inspiring interior design.
+<i>Elevate your space with inspiring interior design.
 Crafting dream interiors: Function meets Flair.
-I breathe life into spaces. Let's transform yours.
+I breathe life into spaces. Let's transform yours.</i>
 Description:
 
 I'm an interior design enthusiast passionate about creating functional and beautiful spaces. I help clients translate their vision into reality, whether it's a complete renovation or a stylish refresh.
